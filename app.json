@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/baby/addBaby",
+    "pages/baby/addName",
+    "pages/family/familyList"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#f74fa3",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/icon/family-unsel.png",
+        "selectedIconPath": "images/icon/family-sel.png",
+        "text": "我的家庭"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "iconPath": "images/icon/otherFamily-unsel.png",
+        "selectedIconPath": "images/icon/otherFamily-sel.png",
+        "text": "亲友家庭"
+      }
+    ]
+  }
+}

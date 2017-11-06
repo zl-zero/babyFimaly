@@ -1,0 +1,4 @@
+<view class="container">
+  <input class="inp_name" bindinput="bindNameInput" placeholder="请输入姓名" confirm-type="done" value="{{userName}}"></input>
+  <view class="addBtn subjectColor" bindtap='bindName'>确定</view>
+</view>

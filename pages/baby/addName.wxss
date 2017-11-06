@@ -1,0 +1,19 @@
+.inp_name{
+  border: 1px solid #bfbfbf;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  width:90%;
+  height: 60rpx;
+  padding-left: 20rpx;
+}
+
+.addBtn{
+  border: 1px solid ;
+  margin-top: 60rpx;
+  width:60%;
+  height: 80rpx;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 80rpx;
+  letter-spacing: 10rpx;
+}

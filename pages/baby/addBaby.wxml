@@ -1,0 +1,84 @@
+<view class="container">
+  <!--头像-->
+  <view class="baby_header">
+    <view class="baby_describe">
+      <text>头像</text>
+    </view>
+    <view class="baby_image" bindtap='bindHeaderImage'>
+      <view class="baby_header_image">
+        <image src='{{defaultBabyImage}}' mode='aspectFit'></image>
+      </view>
+      <view class="right_icon">
+        <image src='{{defaultRightIcon}}' mode='aspectFit'></image>
+      </view>
+    </view>
+  </view>
+
+  <!--姓名-->
+  <view class='baby_contents' bindtap='bindName'>
+    <view class="baby_left_cons">
+      <image src='{{defaultNameIcon}}' mode='aspectFit'></image>
+      <text>姓名</text>
+    </view>
+    <view class="baby_right_cons">
+      <text>{{userName}}</text>
+      <view class="right_icon">
+        <image src='{{defaultRightIcon}}' mode='aspectFit'></image>
+      </view>
+    </view>
+  </view>
+
+  <!--性别-->
+  <picker bindchange="bindPickerChange" value="{{sexIndex}}" range="{{sexArray}}">
+    <view class='baby_contents'>
+        <view class="baby_left_cons">
+          <image src='{{defaultSexIcon}}' mode='aspectFit'></image>
+          <text>性别</text>
+        </view>
+        <view class="baby_right_cons">
+          <text>{{sexArray[sexIndex]}}</text>
+          <view class="right_icon">
+            <image src='{{defaultRightIcon}}' mode='aspectFit'></image>
+          </view>
+        </view>
+    </view>
+  </picker>
+
+  <!--生日-->
+  <picker mode="date" value="{{birthday}}"  bindchange="bindDateChange">
+    <view class='baby_contents'>
+      <view class="baby_left_cons">
+        <image src='{{defaultBirthdayIcon}}' mode='aspectFit'></image>
+        <text>生日</text>
+      </view>
+      <view class="baby_right_cons">
+        <text>{{birthday}}</text>
+        <view class="right_icon">
+          <image src='{{defaultRightIcon}}' mode='aspectFit'></image>
+        </view>
+      </view>
+    </view>
+  </picker>
+  
+
+  <!--关系-->
+  <picker bindchange="bindRelationChange" value="{{relationIndex}}" range="{{relationArray}}">
+    <view class='baby_contents line_lay'>
+      <view class="baby_left_cons">
+        <image src='{{defaultRelationIcon}}' mode='aspectFit'></image>
+        <text>关系</text>
+      </view>
+      <view class="baby_right_cons">
+        <text>{{relationArray[relationIndex]}}</text>
+        <view class="right_icon">
+          <image src='{{defaultRightIcon}}' mode='aspectFit'></image>
+        </view>
+      </view>
+    </view>
+  </picker>
+
+  <!--创建按钮-->
+  <view class="addBtn subjectColor" bindtap='bindBack'>
+      <text>创建宝宝</text>
+  </view>
+</view>
