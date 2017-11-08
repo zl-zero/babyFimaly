@@ -1,9 +1,28 @@
 <!--index.wxml-->
 <view class="container">
-  <view wx:if="{{isbaby}}">111</view>
-  <view wx:else>
-    <view class='createBtn' bindtap='toCreateBaby'>
-      <text>创建</text>
+  <block wx:if="{{isbaby}}" >
+    <view class="baby_container">
+      <view class="left_img">
+        <image src='{{defaultImg}}' mode='scaleToFill'></image>
+      </view>
+      <view class="right_txt">
+        <view class="up_txt">
+          <text>张三ssssss</text>
+          <text class="up_age">三个月</text>
+        </view>
+        <view class="down_txt">
+          <text>2017-08-01</text>
+          <view class="menber_btn">成员</view>
+        </view>
+      </view>
     </view>
-  </view>
+    <view class="title">
+      <text>瞬间时刻</text>
+    </view>
+  </block>
+  <block wx:else>
+    <view class='createBtn' bindtap='toCreateBaby'>
+      <text>创建宝宝</text>
+    </view>
+  </block>
 </view>

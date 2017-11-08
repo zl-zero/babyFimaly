@@ -4,7 +4,8 @@ const app = getApp()
 
 Page({
   data: {
-    isbaby:false
+    isbaby:true,
+    defaultImg:"../../images/baby_test.jpeg"
     // motto: 'Hello World',
     // userInfo: {},
     // hasUserInfo: false,

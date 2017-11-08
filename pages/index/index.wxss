@@ -18,3 +18,89 @@
   color: #f74fa3;
   margin-top:200rpx;
 }
+
+.baby_container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width:100%;
+  height: 260rpx;
+}
+.left_img image{
+  border-radius: 5px;
+  width:80px;
+  height: 80px;
+  margin-left:40rpx;
+}
+
+.right_txt{
+  display: flex;
+  flex-direction: column;
+  width:70%;
+  height: 80px;
+}
+
+.up_txt{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 40px;
+  font-size: 0.8rem;
+  margin-top: 10px;
+}
+
+.up_txt :first-child{
+  margin-left:20px;
+}
+
+.up_age{
+  margin-right: 60px;
+}
+
+.down_txt{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 40px;
+  font-size: 0.8rem;
+  margin-top: 10px;
+}
+
+.down_txt text{
+  color: #bfbfbf;
+  margin-left:20px;
+  font-size: 0.7rem;
+}
+
+.menber_btn{
+  border:1px solid #f74fa3;
+  border-radius: 5px;
+  height: 20px;
+  width:60px;
+  text-align: center;
+  color: #f74fa3;
+  margin-right:20px;
+}
+
+.title text{
+  font-size: 0.8rem;
+  color: gray;
+  position: relative;
+}
+
+.title text::before,.title text::after{
+  position: absolute;
+  content: '';
+  width:160%;
+  background: #bfbfbf;
+  height: 1px;
+  top:50%;
+}
+
+.title text::before{
+  left:120%;
+}
+
+.title text::after{
+  right:120%;
+}
